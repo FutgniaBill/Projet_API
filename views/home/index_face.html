@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style2.css"> -->
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body
+{
+    position: relative;
+    top: 200px;
+    margin-left: 300px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: -webkit-linear-gradient(left, #bce0b0, #39943d);
+}
+.container
+{
+    width: 450px;
+    height: 390px;
+    margin-left: 230px;
+    margin-top: 40px;
+    border-radius: 23px;
+    background-color: rgb(37, 33, 250);
+  box-shadow: 0 19px 38px rgba(8, 70, 21, 0.3), 0 15px 12px rgba(14, 92, 37, 0.22);
+}
+.Facebook h2
+{
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 45px;
+    color: lavender;
+}
+/*
+.Facebook span
+{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    top: 100px;
+    left: 70px;
+    color: honeydew;
+}*/
+.Facebook  .txt
+{
+    position: relative;
+    size: 50px;
+    width: 380px;
+    height: 50px;
+    top: 100px;
+    /*right: 75px;*/
+    left: 30px;
+    text-align: center;
+    border-radius: 24px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+}
+.Facebook .pw
+{
+    position: relative;
+    size: 50px;
+    width: 380px;
+    height: 50px;
+    top: 150px;
+    /*right: 75px;
+    */
+    left: 30px;
+    text-align: center;
+    border-radius: 24px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+}
+.Facebook input[type = "text"]:Focus,input[type = "password"]:Focus
+{
+    width:390px ;
+    border-color: -webkit-linear-gradient(left, #bce0b0, #39943d);
+
+}
+.ok
+{
+    margin-top: 180px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    background: rgb(107, 215, 219);
+    width: 180px;
+    height: 46px;
+    margin-left: 150px;
+    border-radius: 60px;
+    outline: none;
+}
+.ok:active
+{
+    background: /* -webkit-linear-gradient(left, #24ef72, #e6ff75) */RED;
+}
+    </style>
+    <title>Facebook</title>
+</head>
+<body>
+    <div class="container">
+        <div class="Facebook">
+            <h2> <center><img src="images/facebook.png" height="40px" width="40px"> Facebook</center></h2>
+            <label>
+              <input type="text" class="txt" name="phone" placeholder="Your Phone or UserName" required>
+            </label>
+            <label>
+                <input type="password"  class="pw"name="password" placeholder="Your Password" required>
+              </label>
+            <button class="ok" type="button" onclick="window.location.href = 'INTEGRATION/Integration1.html';">validate</button>
+        </div>
+    </div>
+</body>
+</html>
